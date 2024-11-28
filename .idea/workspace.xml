@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64e51de2-b3d2-4812-905f-3297214b1b46" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/NewAdrAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/NewAdrAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +246,7 @@
       <workItem from="1732784876688" duration="7184000" />
       <workItem from="1732793986330" duration="84000" />
       <workItem from="1732795699686" duration="645000" />
-      <workItem from="1732803033248" duration="108000" />
+      <workItem from="1732803033248" duration="258000" />
     </task>
     <servers />
   </component>
