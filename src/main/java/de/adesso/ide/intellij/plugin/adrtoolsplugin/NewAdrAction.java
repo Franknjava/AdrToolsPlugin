@@ -83,7 +83,8 @@ public class NewAdrAction extends AnAction {
     }
 
     private boolean isAdrToolsAvailable(String projectPath) {
-        return ShellUtils.doesShellCommandExist("adr");
+        ShellUtils.ShellResult result = ShellUtils.callShellCommand(projectPath, "adr", "help");
+        return (result != null && result.getExitStatus() == 0);
     }
 
     private boolean isAdrInitialized(String projectPath) {
