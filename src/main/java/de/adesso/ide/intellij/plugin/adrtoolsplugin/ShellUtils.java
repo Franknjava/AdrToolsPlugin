@@ -1,7 +1,5 @@
 package de.adesso.ide.intellij.plugin.adrtoolsplugin;
 
-import com.intellij.execution.process.ScriptRunnerUtil;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -26,10 +24,6 @@ public class ShellUtils {
     }
 
     private ShellUtils() {
-    }
-
-    public static boolean doesShellCommandExist(String command) {
-        return ScriptRunnerUtil.isExecutableInPath(command);
     }
 
     public static ShellResult callShellCommand(String directory, String... command) {
