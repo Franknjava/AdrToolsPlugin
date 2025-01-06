@@ -34,8 +34,7 @@ public final class AppSettingsConfigurable implements Configurable {
         AppSettings.State state =
                 Objects.requireNonNull(AppSettings.getInstance().getState());
         return !mySettingsComponent.getAdrDirectory().equals(state.adrDirectory) ||
-                mySettingsComponent.getUseCustomTemplate() != state.useCustomTemplate ||
-                mySettingsComponent.getCustomTemplate() != state.customTemplate;
+                mySettingsComponent.getTemplate() != state.adrTemplate;
     }
 
     @Override
@@ -43,8 +42,7 @@ public final class AppSettingsConfigurable implements Configurable {
         AppSettings.State state =
                 Objects.requireNonNull(AppSettings.getInstance().getState());
         state.adrDirectory = mySettingsComponent.getAdrDirectory();
-        state.useCustomTemplate = mySettingsComponent.getUseCustomTemplate();
-        state.customTemplate = mySettingsComponent.getCustomTemplate();
+        state.adrTemplate = mySettingsComponent.getTemplate();
     }
 
     @Override
@@ -52,8 +50,7 @@ public final class AppSettingsConfigurable implements Configurable {
         AppSettings.State state =
                 Objects.requireNonNull(AppSettings.getInstance().getState());
         mySettingsComponent.setAdrDirectory(state.adrDirectory);
-        mySettingsComponent.setUseCustomTemplate(state.useCustomTemplate);
-        mySettingsComponent.setCustomTemplate(state.customTemplate);
+        mySettingsComponent.setTemplate(state.adrTemplate);
     }
 
     @Override

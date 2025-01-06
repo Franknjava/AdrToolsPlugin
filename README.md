@@ -1,9 +1,3 @@
-
-
-<div style="text-align: right; width: 100%;">
-    <img src="https://raw.githubusercontent.com/Franknjava/AdrToolsPlugin/refs/heads/main/src/main/resources/images/adesso-logo.png"/>
-</div>
-
 # ADR Tools Support
 
 Supports using ADR commandline tools from within the IDE. Thus, making it easier to work with ADRs.

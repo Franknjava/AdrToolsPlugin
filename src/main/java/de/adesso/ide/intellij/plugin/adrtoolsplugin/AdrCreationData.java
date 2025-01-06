@@ -1,37 +1,37 @@
 package de.adesso.ide.intellij.plugin.adrtoolsplugin;
 
-class AdrCreationData {
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-    private final boolean ok;
-    private final String title;
-    private final String supersedes;
-    private final String links;
-    private String filename;
-
-    public AdrCreationData(boolean ok, String title, String supersedes, String links) {
-        this.ok = ok;
-        this.title = title;
-        this.supersedes = supersedes;
-        this.links = links;
-    }
-
-    public boolean ok() {
-        return ok;
-    }
-    public String title() {
-        return title;
-    }
-    public String supersedes() {
-        return supersedes;
-    }
-    public String links() {
-        return links;
-    }
-    public String filename() {
-        return filename;
+public record AdrCreationData(
+    boolean ok,
+    boolean proposed,
+    String title,
+    List<String> supersedes,
+    List<String> links,
+    String context,
+    String decision,
+    String consequences
+) {
+    public Map<String, Object> asMap() {
+        HashMap<String, Object> map = new HashMap<>();
+        putNotNull(map, "STATUS", proposed ? ADRState.PROPOSED.name() : ADRState.ACCEPTED.name());
+        putNotNull(map, "DATE", DateTimeFormatter.ISO_LOCAL_DATE.format(LocalDate.now()));
+        putNotNull(map, "TITLE", title);
+        putNotNull(map, "SUPERSEDES", new HtmlList("Supersedes:", supersedes));
+        putNotNull(map, "LINKS", new HtmlList("Links:", links));
+        putNotNull(map, "CONTEXT", context);
+        putNotNull(map, "DECISION", decision);
+        putNotNull(map, "CONSEQUENCES", consequences);
+        return map;
     }
 
-    public void filename(String filename) {
-        this.filename = filename;
+    private void putNotNull(Map<String, Object> map, String key, Object value) {
+        if (value != null) {
+            map.put(key, value);
+        }
     }
 }

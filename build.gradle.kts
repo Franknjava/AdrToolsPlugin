@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "de.adesso.ide.intellij.plugin"
-version = "0.1.2"
+version = "0.1.3-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -14,10 +14,10 @@ repositories {
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
-    version.set("2023.2.6")
+    version.set("2023.3")
     type.set("IC") // Target IDE Platform
 
-    plugins.set(listOf(/* Plugin Dependencies */))
+    plugins.set(listOf())
 }
 
 tasks {
@@ -31,8 +31,8 @@ tasks {
     }
 
     patchPluginXml {
-        sinceBuild.set("232")
-        untilBuild.set("242.*")
+        sinceBuild = "162"
+        untilBuild = "250.*"
     }
 
     signPlugin {

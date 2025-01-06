@@ -17,27 +17,34 @@ public final class AppSettings implements PersistentStateComponent<AppSettings.S
     public static class State {
         @NonNls
         public String adrDirectory = "doc/adr";
-        public boolean useCustomTemplate = false;
-        public String customTemplate = """
-                # TITLE
+        public String adrTemplate = """
+                [//]: # (Tags TITLE, DATE, STATUS, SUPERSEDES, LINKS, CONTEXT, DECISION, CONSEQUENCES are not rendered but used as placeholders)
                 
-                Date: DATE
+                # <TITLE></TITLE>
+                
+                Date: <DATE></DATE>
                 
                 ## Status
                 
-                STATUS
+                <STATUS></STATUS>
+
+                <SUPERSEDES></SUPERSEDES>
+
+                <SUPERSEDED></SUPERSEDED>
+                
+                <LINKS></LINKS>
                 
                 ## Context
                 
-                The issue motivating this decision, and any context that influences or constrains the decision.
+                <CONTEXT></CONTEXT>
                 
                 ## Decision
                 
-                The change that we're proposing or have agreed to implement.
+                <DECISION></DECISION>
                 
                 ## Consequences
                 
-                What becomes easier or more difficult to do and any risks introduced by the change that will need to be mitigated.
+                <CONSEQUENCES></CONSEQUENCES>
                 
                 """;
     }

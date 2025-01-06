@@ -14,13 +14,6 @@
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    <style>
-        #logo {
-            text-align: right;
-            width: 90%;
-        }
-    </style>
-    <div id="logo"><img width="500" src="https://raw.githubusercontent.com/Franknjava/AdrToolsPlugin/refs/heads/main/src/main/resources/images/adesso-logo.png"/></div>
     <h2>ADR Tools Support</h2>
     <p>
         Supports using ADR commandline tools from within the IDE. Thus, making it easier to work with ADRs.
@@ -52,7 +45,7 @@
         There you can specify the path where the ADRs are stored.
         In addition you can also provide a custom template to use for ADRs.
     </p>
-    <img width="1200" src="https://raw.githubusercontent.com/Franknjava/AdrToolsPlugin/refs/heads/main/src/main/resources/images/settings-dialog.png"/>
+    <img src="https://raw.githubusercontent.com/Franknjava/AdrToolsPlugin/refs/heads/main/src/main/resources/images/settings-dialog.png"/>
     ]]></description>
 
     <change-notes><![CDATA[
@@ -81,7 +74,7 @@
     <actions>
         <action id="de.adesso.ide.intellij.plugin.adrtoolsplugin.NewAdrAction"
                 class="de.adesso.ide.intellij.plugin.adrtoolsplugin.NewAdrAction"
-                text="New Architecture Decision Record"
+                text="Architecture Decision Record"
                 description="Creates a new Architecture Decision Record"
                 icon="AllIcons.Actions.Lightning">
             <keyboard-shortcut
