@@ -72,19 +72,20 @@ public class NewAdrAction extends AnAction {
     }
 
     private AdrCreationData showAdrCreationDialog(List<String> adrNames) {
+        // TODO Move all UI stuff to a separate class
         ScrollableListPane<String> adrSupersedes = createList(adrNames);
         ScrollableListPane<String> adrLinks = createList(adrNames);
-        JCheckBox proposed = new JCheckBox("Proposed");
+        JCheckBox proposed = new JCheckBox("");
         JTextField adrTitle = new JTextField();
         adrTitle.setPreferredSize(INPUT_SIZE);
         boolean ok = new DialogBuilder()
                 .title("New ADR")
                 .centerPanel(
                         FormBuilder.createFormBuilder()
-                                .addLabeledComponent("Supersed", adrSupersedes)
-                                .addLabeledComponent("Link", adrLinks)
-                                .addLabeledComponent("Proposed", proposed)
                                 .addLabeledComponent("Title", adrTitle)
+                                .addLabeledComponent("Is proposal", proposed)
+                                .addLabeledComponent("Supersedes", adrSupersedes)
+                                .addLabeledComponent("Links to", adrLinks)
                                 .getPanel()
                 )
                 .showAndGet();

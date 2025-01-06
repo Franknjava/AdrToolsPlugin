@@ -1,7 +1,6 @@
 package de.adesso.ide.intellij.plugin.adrtoolsplugin.settings;
 
 import com.intellij.ui.JBColor;
-import com.intellij.ui.components.JBCheckBox;
 import com.intellij.ui.components.JBLabel;
 import com.intellij.ui.components.JBTextArea;
 import com.intellij.ui.components.JBTextField;

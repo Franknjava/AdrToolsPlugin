@@ -18,7 +18,7 @@ public final class AppSettings implements PersistentStateComponent<AppSettings.S
         @NonNls
         public String adrDirectory = "doc/adr";
         public String adrTemplate = """
-                [//]: # (Tags TITLE, DATE, STATUS, SUPERSEDES, LINKS, CONTEXT, DECISION, CONSEQUENCES are not rendered but used as placeholders)
+                [//]: # (Tags TITLE, DATE, STATUS, SUPERSEDES, SUPERSEDED, LINKS, CONTEXT, DECISION, CONSEQUENCES are not rendered but used as placeholders)
                 
                 # <TITLE></TITLE>
                 
