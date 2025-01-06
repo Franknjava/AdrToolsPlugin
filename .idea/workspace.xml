@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64e51de2-b3d2-4812-905f-3297214b1b46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/ADRState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/ADRTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/HtmlList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/template/ContentCreatorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/template/TagListUpdateHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/template/TagReplacementHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/template/TemplateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/ui/ScrollableListPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/adr-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/AdrCreationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/AdrCreationData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/NewAdrAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/NewAdrAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/ShellUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/settings/AppSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/settings/AppSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/settings/AppSettingsComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/settings/AppSettingsComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/settings/AppSettingsConfigurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/adesso/ide/intellij/plugin/adrtoolsplugin/settings/AppSettingsConfigurable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/adesso-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/settings-dialog.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/settings-dialog.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,7 +341,7 @@
       <workItem from="1734598075804" duration="49000" />
       <workItem from="1734598134491" duration="17716000" />
       <workItem from="1734696790444" duration="5164000" />
-      <workItem from="1736164303514" duration="2653000" />
+      <workItem from="1736164303514" duration="3239000" />
     </task>
     <servers />
   </component>
